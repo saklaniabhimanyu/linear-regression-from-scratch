@@ -62,14 +62,3 @@ __all__ = [
     "r2_score",
     "score"
 ]
-# Test Case 2: Typical Prediction
-y_true = np.array([3, -0.5, 2, 7])
-y_pred = np.array([2.5, 0.0, 2, 8])
-
-print(score(y_true, y_pred))
-# Expected (approximately):
-# MAE  = 0.5
-# MSE  = 0.375
-# RMSE = 0.612372
-# MAPE = 32.7381
-# R2   = 0.9486
