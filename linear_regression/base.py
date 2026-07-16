@@ -1,7 +1,7 @@
 import numpy as np
 
-from exceptions import ModelNotTrainedError
-from metrics import r2_score, score
+from .exceptions import ModelNotTrainedError
+from .metrics import r2_score, score
 
 class BaseRegression:
     
