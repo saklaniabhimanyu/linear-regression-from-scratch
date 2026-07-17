@@ -13,6 +13,10 @@ class LinearRegressionBatchGD(BaseRegression):
         b     - bias/intercept
     '''
     def __init__(self, lr = 0.01, max_iter = 10000, verbose = None):
+        if lr <= 0:
+            raise ValueError("learning_rate must be greater than 0")
+        if max_iter <= 0:
+            raise ValueError("max_iter must be greater than 0")
         self.learning_rate = lr
         self.max_iter = max_iter
         self.verbose = verbose
