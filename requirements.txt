@@ -1,5 +1,6 @@
 numpy
 pandas
+pytest
 matplotlib
 scikit-learn
 jupyter
