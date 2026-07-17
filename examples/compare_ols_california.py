@@ -72,13 +72,6 @@ comparison = pd.DataFrame({
 comparison["Absolute Difference"] = (
     comparison["Scratch Linear Regression OLS"] - comparison["Scikit-learn"]
 ).abs()
-'''
-# Display formatting
-comparison["Custom OLS"] = comparison["Custom OLS"].map(lambda x: f"{x:.12f}")
-comparison["Scikit-learn"] = comparison["Scikit-learn"].map(lambda x: f"{x:.12f}")
-comparison["Absolute Difference"] = comparison["Absolute Difference"].map(
-    lambda x: f"{x:.2e}"
-)
-'''
+
 print("Performance Comparison")
 print(comparison.to_string(index=False))
